@@ -1,0 +1,128 @@
+/* GENERAL */
+
+	body {
+	    background-color: #4b4b4b;
+	    color: white;
+	    margin: 0px;
+	}
+
+	a:link {
+		color: #5eff9a;
+	}
+	a:visited {
+		color: #5eff9a;
+	}
+	a:hover {
+		color: #00cc4c;
+	}
+
+	input[type=text] {
+	    height: 30px;
+	    width: 100px;
+	    outline: none;
+	    border: 1px solid #cdcdcd;
+	    border-color: rgba(0,0,0,.15);
+	    background-color: white;
+	    font-size: 16px;
+	}
+
+	input[type=password] {
+	    height: 30px;
+	    width: 100px;
+	    outline: none;
+	    border: 1px solid #cdcdcd;
+	    border-color: rgba(0,0,0,.15);
+	    background-color: white;
+	    font-size: 16px;
+	}
+
+	@font-face {
+		font-family: metalstorm;
+		src: url('MetalStormBold.ttf');
+	}
+
+	h1 {
+		font-family: 'metalstorm';
+		font-size: 128px;
+		margin: auto;
+		text-shadow: #000000 4px 4px;
+	}
+
+	h2 {
+		font-family: 'metalstorm';
+		font-size: 24px;
+		margin: auto;
+		float: right;
+		text-shadow: #000000 2px 2px;
+	}
+
+	.center {
+		margin: 0 auto;
+	}
+
+
+/* LOGIN */
+
+	#operating_wrapper {
+		width: 500px;
+		margin: auto;
+	}
+
+	#operating {
+		width: 500px;
+		min-height: 300px;
+		background-color: #ff5e5e;
+		margin: auto;
+	}
+
+	#login {
+		margin: auto;
+	}
+
+	#login_wrapper {
+		width: 100px;
+		margin: auto;
+	}
+
+
+/* WORKSPACE */
+
+	#banner {
+		width: 100%;
+		height: 30px;
+		background-color: #ff5e5e;
+		margin: auto;
+
+	}
+
+	#upload {
+		width: 300px;
+		background-color: #6b6b6b;
+		float: left;
+	}
+
+	#chat_wrapper {
+		width: 500px;
+		float: left;
+	}
+
+	#chat {
+		width: 500px;
+		height: 170px;
+		float: left;
+		overflow: auto;
+		overflow-x: hidden;
+		word-wrap: break-word;
+	}
+
+	#chat_input {
+		background-color: blue;
+		float: left;
+	}
+
+	#usrpanel {
+		width: 300px;
+		min-height: 170px;
+		background-color: #6b6b6b;
+		float: right;
+	}
