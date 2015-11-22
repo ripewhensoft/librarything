@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>Intel 9001</title>
+        <link rel="stylesheet" type="text/css" href="/stylesheet.css">
+        <script>
+        	window.onload=function () {
+		     var objDiv = document.getElementById("chat");
+		     objDiv.scrollTop = objDiv.scrollHeight;
+
+		    var myVar = setInterval(myTimer, 1000);
+
+			function myTimer() {
+			    parent.document.getElementById("chat").reload();
+			}
+		}
+
+
+        </script>
+    </head>
+<body>
+
+	<!-- =========WORKSPACE========== -->
+	<div id="banner">
+		<h2>INTEL 9001</h2>
+	</div>
+
+
+	<!-- =========UPLOAD========== --> 
+	<div id="upload">
+		<form action="/save_image" method="POST" enctype="multipart/form-data">
+	        <input type="file" name="file">
+	        <input type="submit" value="Upload">
+	    </form>
+
+	    <% Dir['./storage/*'].each do |file| %>
+	    <a href="<%= file %>"><%= file %></a>
+	    <br>
+	    <% end %>
+	</div>
+
+
+	<!-- =========CHAT========== --> 
+	<div id="chat_wrapper">
+		<div id="chat">
+			<% IO.foreach("./chat.txt") do |x| %>
+					<%= x %>
+					<br>
+					<% end %>
+		</div>
+		<form action="/chat" method="POST" enctype="multipart/form-data" id="chat_input">
+			<input type="text" name="usrinput" autofocus="autofocus">
+			<input type="submit" value="Send">
+		</form>
+	</div>
+
+
+	<!-- =========USER/CONTROL========== --> 
+	<div id="usrpanel">
+		Welcome: <%= $usrid %>
+
+		<script>
+			
+		</script>
+		<div id="demo">
+		</div>
+	</div>
+</body>
+</html>
