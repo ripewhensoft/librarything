@@ -56,6 +56,13 @@
 		text-shadow: #000000 2px 2px;
 	}
 
+	#title {
+		font-family: 'metalstorm';
+		font-size: 24px;
+		margin: auto auto auto 10px;
+		text-shadow: #000000 2px 2px;
+	}
+
 	.center {
 		margin: 0 auto;
 	}
@@ -70,18 +77,35 @@
 
 	#operating {
 		width: 500px;
-		min-height: 300px;
+		min-height: 500px;
 		background-color: #ff5e5e;
+		box-shadow: #0dcdcf 5px 5px;
 		margin: auto;
 	}
 
 	#login {
+		margin-left: 50%;
+
+	}
+
+	#entry_wrapper {
+		width: 100%;
 		margin: auto;
 	}
 
 	#login_wrapper {
-		width: 100px;
-		margin: auto;
+		width: 100%;
+		background-color: #ec5858;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	#register_wrapper {
+		width: 100%;
+		background-color: #ec5858;
+		padding-top: 10px;
+		padding-bottom: 10px;
+
 	}
 
 
@@ -92,6 +116,8 @@
 		height: 30px;
 		background-color: #ff5e5e;
 		margin: auto;
+		box-shadow: #0dcdcf 2px 2px;
+		margin: 0px 0px 5px 0px;
 
 	}
 

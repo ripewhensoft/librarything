@@ -1,13 +1,14 @@
 require 'sinatra'
 require 'gdbm'
 
-# gdbm = GDBM.new("")
+
 
 users = {'admin' => 'pass', 'admin2' => 'pass2'} #usr/pass combos
 usrclaim = {} #login try
 saying = ['The violent plunger says "Heyoooo".', 'Betsy dont play like that.', 'That boy aint right.'] #failure responses
 randomsaying = saying.sample #grab random failure response
 $usrid = "nil" #users username for the session
+register = {}
 
 
 
@@ -55,4 +56,24 @@ post '/chat' do
 	input = "#{$usrid}: #{msg}\n"
 	File.open('./chat.txt', 'a') { |file| file.write(input) }
 	erb :success
+end
+
+post '/register' do
+  usreq = params[:usr]
+  passreq = params[:pass]
+
+
+
+    GDBM.open("./users.db") do |gdbm|
+      usrcheck = gdbm.select { |k, v| k == usreq }
+      
+      if usrcheck.empty? == true then
+        puts "worky"
+      else
+        puts "choose another user/pass"
+
+      end
+
+
+  end
 end

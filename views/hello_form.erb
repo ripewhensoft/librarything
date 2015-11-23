@@ -9,17 +9,37 @@
 		<div id="operating">
 			<br>
 			<br>
-			<br>
-			<br>
-			<div id="login_wrapper">
-				<form action="/workspace" method="POST" id="login">
-					<input type="text" name="usr" placeholder="username" autofocus="autofocus" style="box-shadow: #000000 2px 2px">
-					<br><br>
-				    <input type="password" name="pass" placeholder="password" style="box-shadow: #000000 2px 2px">
-				    <br><br>
-				    <input type="submit" style="width: 100px;">
-				</form>
+			
+			<div id="entry_wrapper">
+				<div id="login_wrapper">
+					<div id="title">Login</div>
+					<form action="/workspace" method="POST" id="login">
+						<input type="text" name="usr" placeholder="username" autofocus="autofocus" style="box-shadow: #000000 2px 2px">
+						<br><br>
+					    <input type="password" name="pass" placeholder="password" style="box-shadow: #000000 2px 2px">
+					    <br><br>
+					    <input type="submit" style="width: 100px;">
+					</form>
+				</div>
+				<br>
+				<br>
+				<div id="register_wrapper">
+					<div id="title">Register</div>
+					<form action="/register" method="POST" id="login">
+						<input type="text" name="usr" placeholder="username" style="box-shadow: #000000 2px 2px">
+						<br><br>
+						<input type="text" name="usr2" placeholder="verify" style="box-shadow: #000000 2px 2px">
+						<br><br>
+					    <input type="text" name="pass" placeholder="password" style="box-shadow: #000000 2px 2px">
+					    <br><br>
+					    <input type="text" name="pass2" placeholder="verify" style="box-shadow: #000000 2px 2px">
+					    <br><br>
+					    <input type="submit" placeholder="Register" style="width: 100px;">
+					</form>
+				</div>
 			</div>
+			<br>
+			<br>
 		</div>
 		<h1> 9001 </h1>
 	</div>
